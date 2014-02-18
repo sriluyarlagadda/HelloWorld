@@ -12,7 +12,7 @@ import org.json.JSONObject;
 import android.content.Context;
 import android.content.res.Resources;
 
-public class HelloWorld {
+public class JSONUtils {
 
 	public String getString(String key, JSONObject json) {
 		try {
@@ -34,7 +34,7 @@ public class HelloWorld {
 		}
 	}
 
-	public static String fromJsonFileToString(Context context, int jsonResId) throws IOException {
+	public String fromJsonFileToString(Context context, int jsonResId) throws IOException {
 		Resources res = context.getResources();
 		InputStream inputStream = res.openRawResource(jsonResId);
 
